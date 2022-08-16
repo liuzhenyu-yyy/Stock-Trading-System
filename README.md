@@ -1,5 +1,5 @@
 # Stock Trading Simulator
- A simple stock trading simulator website based on Flask. Multiple operations including qouting, purchasing, selling coule be performed to simulate real stock operations.
+ A simple stock trading simulator website based on [Flask web framework](https://flask.palletsprojects.com/en/2.2.x/). Multiple operations including qouting, purchasing, selling coule be performed to simulate real stock operations.
  
  <img align="center" src="https://raw.githubusercontent.com/liuzhenyu-yyy/Stock-Trading-System/main/assets/demo.png" width=800/>
  
