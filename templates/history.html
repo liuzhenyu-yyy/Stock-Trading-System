@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Deal</th>
+          <th scope="col">Symbol</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price($)</th>
+          <th scope="col">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for deal in history %}
+        <tr>
+            <th scope="row">{{deal.purchase}}</th>
+            <td>{{deal.symbol}}</td>
+            <td>{{deal.shares}}</td>
+            <td>{{deal.price}}</td>
+            <td>{{deal.time}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+{% endblock %}

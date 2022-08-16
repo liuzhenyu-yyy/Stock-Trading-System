@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <p><h4>Simply quote the price of the stock</h4></p>
+        <p><input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text"/>
+        <button class="btn btn-info" type="submit">Quote</button>
+    </form>
+    <p>
+        Stock information downloaded from <a href="https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo&datatype=csv">AlphaVantage</a>
+    </p>
+    <br/><br/><br/><br/>
+    <form action="http://biz.finance.sina.com.cn/suggest/lookup_n.php" method="get">
+        <p><h4>Quote more information about the stock</h4></p>
+        <input autocomplete="off" autofocus class="form-control" name="q" placeholder="Symbol" type="text"/>
+        <button class="btn btn-info" type="submit">Quote</button>
+    </form>
+    <p>
+        Stock information provided by <a href="http://finance.sina.com.cn/stock/">Sina stock</a>
+    </p>
+{% endblock %}

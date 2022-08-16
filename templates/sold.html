@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sold
+{% endblock %}
+
+{% block main %}
+    <font size="9" face="Times" style="color:blue">
+    Sale Done
+    </font>
+    <p>
+        Stock:         {{symbol}}
+    </p>
+    <p>
+        Shares:         {{shares}}
+    </p>
+    <p>
+        Price:   {{price}}  per share
+    </p>
+    <p>
+        Whole worth: {{total}}
+    </p>
+    <p>
+        Your cash now: {{cash}}
+    </p>
+    <ul class="navbar-nav mr-auto mt-2">
+        <li class="nav-item"><a class="nav-link" href="/sell">Make another sale.</a></li>
+        <li class="nav-item"><a class="nav-link" href="/history">View history</a></li>
+        <li class="nav-item"><a class="nav-link" href="/">View my portfolio.</a></li>
+    </ul>
+{% endblock %}

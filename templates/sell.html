@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <p><h4>What stock do you want to sell:<select name="symbol">{% for name in names %}<option value={{name}}>{{name}}</option>{% endfor %}</select>.</p>
+        <p>How many shares you want to sell: <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Number" type="text"/>
+        <p><h4><button class="btn btn btn-success" type="submit">Sell</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <p>
+        At present, the price of {{symbol}} is {{price}} per share.
+    </p>
+    <ul class="navbar-nav mr-auto mt-2">
+        <li class="nav-item"><a class="nav-link" href="/buy">Make a purchase.</a></li>
+        <li class="nav-item"><a class="nav-link" href="/sell">Sell some stoke.</a></li>
+    </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>
+        Stock information downloaded from <a href="https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo&datatype=csv">AlphaVantage</a>
+    </p>
+{% endblock %}
