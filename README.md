@@ -18,7 +18,7 @@
  
 ## Start the web page
 To start the stock trading simulator website, clone the repo or download all the files into the folder `Stock-Trading-System`.
-After installing all dependencies, change working directory to `Stock-Trading-System` and run：
+After installing all dependencies, change working directory into `Stock-Trading-System` and run：
 
 ```
 flask run
